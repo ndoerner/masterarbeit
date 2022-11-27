@@ -1,0 +1,114 @@
+\documentclass[a4paper, 11 pt, fleqn]{article}
+
+% Layout und Allgemeines
+\usepackage[left = 2.5 cm, right = 2.5 cm, top = 2.5 cm, bottom = 2.5 cm ]{geometry} % Seitenränder
+\usepackage[utf8]{inputenc} % Encoding
+\usepackage{microtype} % verbesserter Randausgleich
+\usepackage[onehalfspacing]{setspace} % Zeilenabstand 1,5
+% Bibliographie
+\usepackage[authoryear]{natbib}
+% Sidenotes
+\usepackage{sidenotes}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{makecell}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{dsfont}
+\usepackage{float}
+\usepackage{multirow}
+% Grafiken/Abbildungen
+\usepackage{graphicx} 
+\usepackage{subcaption}
+\usepackage{pdflscape}
+
+% Bunter Text
+\usepackage{xcolor}
+\graphicspath{{images/}}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\setcitestyle{aysep={}, yysep={;}}
+\bibliographystyle{apalike}
+
+\DeclareMathOperator*{\argmax}{arg\,max} % argmax
+\DeclareMathOperator*{\argmin}{arg\,min} % argmin
+
+\tikzset{
+  solid node/.style={circle,draw,inner sep=1.2,fill=black},
+  hollow node/.style={circle,draw,inner sep=1.2},
+}
+
+\begin{document}
+\begin{titlepage}
+	\noindent
+	Otto-Friedrich-Universitätt Bamberg\\
+	Fakult\"at f\"ur Sozial- und Wirtschaftswissenschaften\\
+	Lehrstuhl f\"ur Volkswirtschaftslehre, insb. Finanzwissenschaft\\
+	Prof. Dr. Florian Herold
+	
+	\begin{center}
+		\vspace{2 cm}
+		\Large{
+			\textbf{
+		Consumer Responses to Behaviour-Based Price Discrimination
+		}}\\ 
+		\vspace{0.5 cm}
+		\normalsize{Datum der Abgabe: 21.04.2023}\\
+		\vspace{1 cm}
+		\includegraphics[scale=0.175]{graphics/logo.png}\\
+		\vspace{1 cm}	
+		\textbf{Masterarbeit \\
+		im Studiengang \\
+		European Economic Studies (EES) \\
+		an der Fakultät Sozial- und Wirtschaftswissenschaften \\
+		der Otto-Friedrich-Universität Bamberg}\\
+	\end{center}
+	
+	\vspace{5cm}
+	\flushright{
+		Niklas Sebastian Dörner\\
+		An der Weberei 3, 96047 Bamberg\\
+		Matrikelnr. 1859018\\
+		niklas-sebastian.doerner@stud.uni-bamberg.de\\
+	}			
+\end{titlepage}
+
+% Verzeichnisse
+% \pagenumbering{Roman}
+% \newpage
+% \addcontentsline{toc}{section}{Table of Contents}
+% \tableofcontents
+% \listoffigures
+% \newpage
+% 
+% % \listoftables
+% 
+% \newpage
+% 
+% \pagenumbering{arabic}
+% 
+% % Endlich kommt mal Inhalt
+% \begin{abstract}
+% 	A
+% \end{abstract}
+% %
+% \section{Baseline Model} \label{sec:baseline}
+% \newpage
+% \pagenumbering{Roman}
+% % \setcounter{page}{3}
+% \bibliography{bibliography}
+% 
+% \newpage
+% \section*{Selbständigkeitserklärung}
+% Ich erkläre hiermit gem. § 6 Abs. 6 APO SoWi, dass ich die vorstehende Masterarbeit selbstständig verfasst, keine anderen
+% als die angebenen Quellen und Hilfsmittel benutzt und die wörtlich oder inhaltlich übernommenen Stellen als solche kenntlich
+% gmacht habe. Des Weiteren erkläre ich, dass die digitale Fassung der gedruckten Asufertigung der Masterarbeit ausnahmslos
+% in Inhalt und Wortlaut entspricht und zur Kenntnis genommen wurde, dass diese digitale Fassung, einer durch Software
+% unterstützten, anonymisierten Prüfung auf Plagiate unterzogen werden kann. \\
+% \vspace*{1 cm}
+% \\
+% \noindent\begin{tabular}{ll}
+% 	\makebox[2.5in]{\hrulefill} & \makebox[2.5in]{\hrulefill}\\
+% 	Niklas D\"orner & Ort, Datum\\[8ex]% adds space between the two sets of signatures
+% \end{tabular}
+
+\end{document}
