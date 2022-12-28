@@ -73,42 +73,98 @@
 \end{titlepage}
 
 % Verzeichnisse
-% \pagenumbering{Roman}
-% \newpage
-% \addcontentsline{toc}{section}{Table of Contents}
-% \tableofcontents
-% \listoffigures
-% \newpage
-% 
-% % \listoftables
-% 
-% \newpage
-% 
-% \pagenumbering{arabic}
-% 
-% % Endlich kommt mal Inhalt
-% \begin{abstract}
-% 	A
-% \end{abstract}
-% %
-% \section{Baseline Model} \label{sec:baseline}
-% \newpage
-% \pagenumbering{Roman}
-% % \setcounter{page}{3}
-% \bibliography{bibliography}
-% 
-% \newpage
-% \section*{Selbständigkeitserklärung}
-% Ich erkläre hiermit gem. § 6 Abs. 6 APO SoWi, dass ich die vorstehende Masterarbeit selbstständig verfasst, keine anderen
-% als die angebenen Quellen und Hilfsmittel benutzt und die wörtlich oder inhaltlich übernommenen Stellen als solche kenntlich
-% gmacht habe. Des Weiteren erkläre ich, dass die digitale Fassung der gedruckten Asufertigung der Masterarbeit ausnahmslos
-% in Inhalt und Wortlaut entspricht und zur Kenntnis genommen wurde, dass diese digitale Fassung, einer durch Software
-% unterstützten, anonymisierten Prüfung auf Plagiate unterzogen werden kann. \\
-% \vspace*{1 cm}
-% \\
-% \noindent\begin{tabular}{ll}
-% 	\makebox[2.5in]{\hrulefill} & \makebox[2.5in]{\hrulefill}\\
-% 	Niklas D\"orner & Ort, Datum\\[8ex]% adds space between the two sets of signatures
-% \end{tabular}
+\pagenumbering{Roman}
+\newpage
+\addcontentsline{toc}{section}{Table of Contents}
+\tableofcontents
+\listoffigures
+\newpage
 
+% \listoftables
+
+\newpage
+
+\pagenumbering{arabic}
+
+% Endlich kommt mal Inhalt
+\begin{abstract}
+	The abstract
+\end{abstract}
+%
+\section{Introduction} \label{sec:intro}
+%
+\citet{Choe.2018} is chosen due to its significant contribution to the literature. The model they develop is dynamic and
+was innovative in the sense that endogenously created asymmetric information leads to multiple and asymmetric equilibria with
+and without endogenous product choice even when firms are symmetric ex ante. The asymmetry in equlibrium depends on the foward-looking
+tendency of firms (positive discount factor for the future). \textcolor{red}{Siehe Content-Reiter Citavi}
+
+\subsection{Price Differentiation} \label{ssec:pricediff}
+Types of price discrimination
+%
+\subsection{Spatial Competition}
+Mostly Hotelling (incl. impossibility result $\to$ relevance for Choe) and maybe also the circle (see Belleflamme)
+%
+\section{\citet{Choe.2018}: BBPD and Spatial Competition in a Dynamic Context} \label{sec:choe_2018_intro}
+%
+This section provides an introduction to the model presented in \citet{Choe.2018}. The present a model that combines
+behaviour-based price discrimination with spatial competition. A brief overview of the model is followed by a thorough
+exposition below. The model is dynamic and comprises two periods and two firms.
+In the first period, firms choose their location as they do in the standard Hotelling model with quadratic transportation costs
+but also track all consumers that decide to purchase from them in this period. This creates informational asymmetries as
+firms can only track customers that purchased from \textit{them}. Once chosen, locations are fixed for the entirety of the
+game. \textcolor{red}{VERSCHIEBEN Note that the competiton for location is also a competition for information.} In the baseline model, this concludes the spatial competition between firms. Customer's location in the Hotelling linear
+city over [0,1] is the only source of heterogeneity in the set of consumers.\footnote{This is sufficient as a source of heterogeneity as variation in willingness to pay is the only thing required by the model.} In the second period, firms can exploit
+their private information by discriminating against consumers based on their decisions from the first period:~firms offer
+`personalised pricing' (p.~5672) to \textit{each} consumer who purchased from that firm in the first period. Firms also set
+a uniform `poaching' price (p.~5672) in order to attract consumers who previously purchased from their competitor.
+Firms simultaneously choose the poaching price first, after which they set the individualised prices for their existing customers.
+This price structure hinges on the ability of firms to track their customers in the first period and endogenously create private
+information. Consumers then observe three prices prior to their purchase decision in the second period: their personalised price
+and the two poaching prices; they only care about the lowest price absent any loyalty or fairness concerns. The authors assume that
+the inclusion of ``bevioral elements to consumer choice is likely to change [the] results substantially.'' (p.~5672)
+The model is dynamic since firms have multiple periods to act, multiple decisions to make and interact with one another.
+Accordingly, firms intertemporally maximise their total profits over both profits. The authors thus endow firms (and consumers) with
+positive discount factors. The discounting of future profits by firms ensures the existance of asymmetric equilibria; if firms have no
+intertemporal prefence for second-period profits, equilibria are symmetric irrespecive of consumers' discount factors.
+
+
+\subsection{Baseline Model}
+Firms are assumed to have constant marginal cost of production; this is~--~as commonly done in this strain of the literature~--~normalised to 0. By assumption, all consumers
+choose a firm from which they purchase one unit of good in the first period.
+\section{\citet{Armstrong.2019}: Discriminating Against Captive Consumers}
+%
+\subsection{Captive Consumers~--~Consumer Myopia}
+%
+\section{\textcolor{red}{Zwischenfazit: What we have learned so far, where we stand now and where we are going next}}
+Preliminary conclusion: Model Components oder so ähnlich
+%
+\section{Extensions} \label{sec:extensions}
+%
+\subsection{Intersecting \citet{Choe.2018} and \citet{Armstrong.2019}}
+%
+\subsection{Consumer Responses: Signalling and Search}
+%
+\subsubsection{Signalling}
+%
+\subsubsection{Search}
+%
+\newpage
+\pagenumbering{Roman}
+% \setcounter{page}{3}
+\bibliography{bibliography}
+
+\newpage
+\section*{Selbständigkeitserklärung}
+Ich erkläre hiermit gem. \text{\S}6 Abs. 6 APO SoWi, dass ich die vorstehende Masterarbeit selbstständig verfasst, keine anderen
+als die angebenen Quellen und Hilfsmittel benutzt und die wörtlich oder inhaltlich übernommenen Stellen als solche kenntlich
+gmacht habe. Des Weiteren erkläre ich, dass die digitale Fassung der gedruckten Asufertigung der Masterarbeit ausnahmslos
+in Inhalt und Wortlaut entspricht und zur Kenntnis genommen wurde, dass diese digitale Fassung, einer durch Software
+unterstützten, anonymisierten Prüfung auf Plagiate unterzogen werden kann. \\
+\vspace*{1 cm}
+\\
+\noindent\begin{tabular}{ll}
+	\makebox[2.5in]{\hrulefill} & \makebox[2.5in]{\hrulefill}\\
+	Niklas D\"orner & Ort, Datum\\[8ex]% adds space between the two sets of signatures
+\end{tabular}
+%
 \end{document}
