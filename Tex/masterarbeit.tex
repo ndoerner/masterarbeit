@@ -114,20 +114,73 @@ exposition below. The model is dynamic and comprises two periods and two firms.
 In the first period, firms choose their location as they do in the standard Hotelling model with quadratic transportation costs
 but also track all consumers that decide to purchase from them in this period. This creates informational asymmetries as
 firms can only track customers that purchased from \textit{them}. Once chosen, locations are fixed for the entirety of the
-game. \textcolor{red}{VERSCHIEBEN Note that the competiton for location is also a competition for information.} In the baseline model, this concludes the spatial competition between firms. Customer's location in the Hotelling linear
-city over [0,1] is the only source of heterogeneity in the set of consumers.\footnote{This is sufficient as a source of heterogeneity as variation in willingness to pay is the only thing required by the model.} In the second period, firms can exploit
-their private information by discriminating against consumers based on their decisions from the first period:~firms offer
-`personalised pricing' (p.~5672) to \textit{each} consumer who purchased from that firm in the first period. Firms also set
-a uniform `poaching' price (p.~5672) in order to attract consumers who previously purchased from their competitor.
-Firms simultaneously choose the poaching price first, after which they set the individualised prices for their existing customers.
-This price structure hinges on the ability of firms to track their customers in the first period and endogenously create private
-information. Consumers then observe three prices prior to their purchase decision in the second period: their personalised price
-and the two poaching prices; they only care about the lowest price absent any loyalty or fairness concerns. The authors assume that
-the inclusion of ``bevioral elements to consumer choice is likely to change [the] results substantially.'' (p.~5672)
-The model is dynamic since firms have multiple periods to act, multiple decisions to make and interact with one another.
-Accordingly, firms intertemporally maximise their total profits over both profits. The authors thus endow firms (and consumers) with
-positive discount factors. The discounting of future profits by firms ensures the existance of asymmetric equilibria; if firms have no
-intertemporal prefence for second-period profits, equilibria are symmetric irrespecive of consumers' discount factors.
+game. Note that the competiton for location is also a competition for information. In the baseline model, this thus concludes the
+spatial competition between firms. Customer's location in the Hotelling linear city over [0,\,1] is the only source of heterogeneity
+in the set of consumers.\footnote{This is sufficient as a source of heterogeneity as variation in willingness to pay based on different
+transportation costs is the only property required by the model.} In the second period, firms can exploit their private information by
+discriminating against consumers based on their decisions from the first period:~firms offer `personalised pricing' (p.~5672) to
+\textit{each} consumer who purchased from that firm in the first period. Firms also set a uniform `poaching' price (p.~5672) in
+order to attract consumers who previously purchased from their competitor. Firms simultaneously choose the poaching price first,
+after which they set the individualised prices for their existing customers. This price structure hinges on the ability of firms
+to track their customers in the first period and endogenously create private information. Consumers then observe three prices
+prior to their purchase decision in the second period: their personalised price and the two poaching prices; they only care about
+the lowest price absent any loyalty or fairness concerns. The authors assume that the inclusion of ``bevioral elements to consumer
+choice is likely to change [the] results substantially.'' (p.~5672) The model is dynamic since firms have multiple periods to act,
+multiple decisions to make and interact with one another. Accordingly, firms intertemporally maximise their total profits over both
+periods. The authors thus endow firms (and consumers) with positive discount factors. The discounting of future profits by firms
+ensures the existance of asymmetric equilibria; if firms have no intertemporal prefence for second-period profits, equilibria are
+symmetric irrespecive of consumers' discount factors.
+%
+\subsection{Baseline Model} \label{sec:choe-baseline} % based on Section 2 of \citet{Choe.2018}
+The firm comprises two firms that compete in a Hotelling linear city with quadratic costs for location and consumers in a two-stage game
+with perods $\tau = 1,\,2$. Consumers are uniformly distributed on [0,\,1] where consumer $x$ is simply located at $x$.
+Consumers incur quadratic transportation costs. Firms have full knowledge of this setup. Furtermore, firms are assumed to have constant
+marginal cost of production; this is~--~as is common in this strain of the literature~--~normalised to 0. Over the course of the game,
+firms gather information and engage in price discrimination against consumers. Consumers are price takers and simply act as a source of
+demand without having any notable actions to chose from.
+%
+\subsubsection{Firms}
+\textcolor{red}{Grafiken erstellen, um Spiel aus Sicht der Firma anschaulicher darzustellen?}
+Firms are indexed by $i = A,\,B$ and act as duopolists. Firms compete for location for $\tau=1$. Since firms can only gather relevant
+information in the first period, the location game is at the same time a contest for (private) information. The outcome of this game
+determines the distribution of endogenously created private information among the dupolists and their respective ability to engage in
+price discrimination. Firms set a unform price $P^1_i$ in the first period and track their customers. For each consumer, a firm knows
+whether it was a customer in the first period. \citet[p. 5672]{Choe.2018} describe the information gain from tracking as follows:
+let $\mathscr{A}$ denote the set of consumers that are a customer of firm $A$ in $\tau=1$. After $\tau=1$, firm $A$ knows
+$\forall x \in [0,\,1]$ whether $x\in \mathscr{A}$ and also the location~$x$ of consumer~$x$ if that consumer was indeed a customer
+of firm~$A$ in the first period. This similarly holds with customer set~$\mathscr{B}$ and customers~$y$ for firm~$B$.
+The model structure assumed by \citet{Choe.2018} in conjunction with the tracking mechanism
+implies that both firms know the location of the indifferent consumer \textcolor{red}{$\hat{x}$ benennen ja/nein?} (marginally above (below) the rightmost (leftmost) consumer in their
+set of first-period customers, depending on whether the firm served the customers to left (right) of the indifferent consumer) and can, with
+certainty, assign non-customers their first-period supplier since there are only two firms and the world is linear. If the model were to include
+$n > 3$ competing firms, setting an efficient poaching price would likely be a much more involved process for any given firm. \\
+% Period 2
+The pricing strategies available to firm $i$ in period $\tau=2$ are determined by the informational asymmetries that result from the outcome
+of the location game. \citet[p. 5672]{Choe.2018} let firms set two different types of prices in period $\tau=2$. Based on the private
+information obatained in $\tau=1$, firms engage in price discrimination in two disctinct ways. They\footnote{For brevity I assume the perspective
+of firm $A$ in the following description.} discriminate \textit{between} first-period customers (all $x\in\mathscr{A}$) and consumers that chose
+the competitor (all $x\notin\mathscr{A}$, i.e. all $x\in\mathscr{B}$ since the authors assume a duopoly) but also \textit{within} $\mathscr{A}$.
+Firms set a uniform poaching price, e.g. $P_A(\mathscr{B})$, aimed at all consumers who chose their competitor in the first period and an
+individualised price, e.g. $P_A(x)$. The poaching price is designed to incentivise consumers to switch to another firm in $\tau=2$ while the
+individualised pricing schedule is designed to appropriate the highest possible surplus based on the information obtained in the first period.
+However, each consumer chooses among their personsalised price and the two poaching prices. Note that the uniform poaching price can be viewed
+as primarily a function of set membership, while the individualised price offered to a given customer $x\in\mathscr{A}$ is a function of their
+specific location along the [0,\,1]-line \textcolor{red}{Mit oder ohne Bindestrich?}.
+Firms set their poaching price first, followed by the individualised prices (p. 5672). \textcolor{orange}{ibid? Autor ja/nein? Nur Seitenzahl?}
+Discriminating between the two major groups of consumers is \textcolor{red}{first/second/third; nachschauen was Choe et al. schreiben, aber auch mal neben Definitionen legen}
+price discrimination. Price discrimination against the consumers in $\mathscr{A}$ (or $\mathscr{B}$, respectively) is first-degree price discrimination. \\
+% Discount factor
+\citet[p. 5672]{Choe.2018} endow firms with a positive discount factor $\delta_f \in [0,\,1]$. The discount factor is identical for both
+firms but may differ from the discount factor of the consumer population, $\delta_c$. The model produces asymmetric equilibria as long as
+$\delta_f > 0$ (p. 5673). Firms thus face an intertemporal decision problem to maximise their total discounted profit
+$\Pi_i = \pi^1_i + \delta_f\pi^2_i$ and compete for location (information) based on their pricing regimes.
+%
+
+%
+\subsubsection{Consumers}
+The model assumes a single set of homogenous consumers. All consumers have the same valuation $v$ for the good sold by the firms and only 
+differ in their location within Hotellings linear city.
+%
 
 
 \subsection{Related Literature (tbd)}
