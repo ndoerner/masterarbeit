@@ -179,11 +179,30 @@ $\Pi_i = \pi^1_i + \delta_f\pi^2_i$ and compete for location (information) based
 
 %
 \subsubsection{Consumers}
-The model assumes a single set of homogenous consumers. All consumers have the same valuation $v$ for the good sold by the firms and only 
-differ in their location within Hotellings linear city.
+The model assumes a single set of homogenous consumers. Consumers are indexed by their location $x$ in Hotellings linear city.
+All consumers are within the interval $[0,\,1]$. Consumers incur transportation costs as a quadratic function of distance travelled
+to their preferred retailer. All consumers have the same valuation $v$ for the good sold by the firms and only differ in their location
+within Hotellings linear city. Furthermore, all consumers have an identical discount factor, $\delta_c$, which may differ from $\delta_f$,
+the discount factor of the duopolists; while \citet{Fudenberg.2000} assume $\delta_c = \delta_f = \delta$, \citet{Choe.2018} assume the
+general case of $\delta_c \neq \delta_f$ (p. 5673). For $\delta_c$ consumers are completely myopic and disregard the utility derived
+from the second-period purchase while $\delta_c = 1$ implies that consumers value both instances of purchasing the good equally.
+Consumers are price takers and are de facto only a source of demand for firms; they have no meaningful action set. The only variation
+among consumers results from their location on the $[0,\,1]$ interval and by extension the different transport costs that are incurred
+by different consumers. Household in a given period is defined as $v - P_i(x)-t(x-l)^2$ when buying from firm~$i$ (p. 5672). $v$ is a
+consumers utility from consumption, $P_i(x)$ is the price set by firm~$i = A,\,B$ for consumer $x$. That firm is located at $l$, implying distance
+travelled is $|x-l|$. Recall that firms set a uniform price in the first period, a uniform poaching price in the second period but also engage
+in personalised pricing in period where possible. Thus, consumers effectively encounter five different prices over the course of the game. 
+While never explicitly stated, consumers seem to maximise expected utility 
+\begin{align} \label{eq:consumer-expected-utility}
+	v - P^1_i(x)-t^1(x-l_i)^2 + \delta_c [v - P^2_j(x)-t^2(x-l_j)^2]
+\end{align}
+which is simply the discounted sum of the individual utilities. Here, the superscripts refer to the period in which the price is paid and the
+transport costs are incurred, respectively. Making this disctinction for prices is obvious. However, since consumers may switch from one firm
+to another when making their purchase decision in $\tau = 2$, consumers may travel some other distance relative to $\tau = 1$ and thus incur
+the corresponding transportation costs. Since customers can remain loyal to their first-period choice, $i = j$ is possible.
+\textcolor{red}{In Section~\ref{sec:choe-extensions} I consider extensions that introduce heterogeneity to the set of consumers, such as departing
+from the assupmtion of a single discount factor $\delta_c$.}
 %
-
-
 \subsection{Related Literature (tbd)}
 \begin{itemize}
 	\item p. 5672: ``we abstract away from these issues mainly because our aim is to clearly understand how changes in informational assumptions lead to different equilibria
