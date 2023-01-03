@@ -203,6 +203,71 @@ the corresponding transportation costs. Since customers can remain loyal to thei
 \textcolor{red}{In Section~\ref{sec:choe-extensions} I consider extensions that introduce heterogeneity to the set of consumers, such as departing
 from the assupmtion of a single discount factor $\delta_c$.}
 %
+\subsubsection{Equilibria and Theoretical Results} \label{ssec:choe-results}
+\textcolor{red}{Wie detailliert soll auf die Ergebnisse aus \citet{Choe.2018} eingegangen werden? Behandlung der Herleitungen/Beweise aus dem Anhang?}
+Fälle
+\begin{itemize}
+	\item Section 3: Exogenously fixed locations
+	\item Section 4: Endogenous location choice
+\end{itemize}
+\textcolor{red}{Ein paar einleitende Sätze} \\
+\subsubsection*{Exogenously Fixed Locations}
+First, the authors solve the model by assuming exogenously fixed locations (p. 5673). They assume maximal differentiation, arguing that they
+follow most other studies which treat behaviour-based price discrimination \textcolor{red}{Machen zB FT2000 das auch? Falls ja, wieso? Was, wenn man abweicht? Zb Hotelling ohne simultane Wahl, also Treffen in der Mitte?};
+firm $A$ is assumed to be located at $0$, while firm $B$ is assumed to be located at $1$. Let the marginal consumer who is indifferent between
+firm $A$ and $B$ \textit{in period $\tau = 1$} be consumer $z \in [0,\,1]$. Following from the location restrictions imposed on the firms, firm $A$ serves all
+consumers $x \leq z$ and firm $B$ serves all consumers $y \geq z$, respectively, in the first period. \textcolor{red}{The position of the marginal
+consumer follows from the outcome of first-period Bertrand game and by extension which of the two equilibria of the game materialises.}
+\textcolor{cyan}{Ja, es sind nur zwei, da je ein Fall aus Lemma 1 zu einem Fall aus Lemma 2 korrespondiert.}
+By exogenously fixing the position of both firms, the Bertrand game is the only relevant intercation in the first period.
+It determines the position of the marginal consumer. The authors derive two asymmetric (albeit very similar) equilibria, one for each case, i.e. $(i) z < 0.5$
+and $(ii) z > 0.5$. The equilibria are characterised in Lemma~1 (equilibria of the Bertrand game in $\tau = 1, $p. 5673) and Lemma~2
+(equilibrium prices of the discrimination game as set in $\tau = 2$, p. 5675). The lemmatas refer to the original article. The full derivation
+is in the appendix of the orginal article (p. 5682). The proof runs as follows: firms begin by determining their pricing strategies for $\tau = 2$.
+As described in section~\ref{ssec:choe-firms} these prices are a function of consumer's set membership. The price set by an individual firm depends
+on the outcome of the Bertrand game (i.e. $z \lessgtr 0.5$) but the pricing regime implemented by the firm that secured the larger market
+share is similar in either case. Since locations are set exogenously, there is no other aspect to the determination of the location of $z$
+in this case. Next, the specific location of the marginal consumer $z$ within the relevant interval is determined~--~in case~$(i)$,
+$z$ is located somewhere in $[0,\,0.5)$, for example. The authors maximise firms' profits and exploit the first-order conditions for
+profit maximisation to obtain their expressions for $z$, the reaction functions, and the equilibrium prices.
+\textcolor{red}{Vermutlich sollte ich die Preise/Ausdrücke hier hinschreiben, um später darauf Bezug zu nehmen und um der Leserin einen Bezugspunkt
+zu geben? Vor allem, da ja auch hierunter darauf Bezug genommen wird}\textcolor{cyan}{$\to$ wenn hier schon 3x Bezug steht, dann erübrigt sich die Frage wohl}\\
+% Discussion of equilibria
+%
+The characterisation of the equlibria is described by \citet[p. 5682]{Choe.2018} as follows: \textcolor{red}{Beschreibung aus appendix und section 3 kombinieren}
+For $z \leq 0.5$ firm $B$ will have secured the majority of the market in period $\tau = 1$. Both firms engage in first-degree price
+discrimination against consumers within their respective customer sets \textcolor{red}{wie viel Konsumentenrente wird abgeschöpft? Falls alles, kann man dann noch von first-degree price discrimination sprechen?}
+and set a poaching price for all other consumers. The firm which secured less of the market in $\tau = 1$, i.e. firm $A$ in this case,
+sets a positive poaching price. Firm $B$ sets a price of $0$ for consumers in $[0,\,\frac{1+2z}{4}]$ since consumers to the left of $\frac{1+2z}{4} \leq 0.5 \,\forall z \leq 0.5$
+find travelling to $B$ prohibitively expensive after observing the pricing schedule of firm $A$ as described by~\eqref{FEHLT NOCH} \textcolor{red}{FEHLT NOCH}.
+This price of $0$ comprises both the uniform poaching price offered by firm $B$ and the personalised pricing offered to some $y \in \mathscr{B}$.
+Consumers to the right of this threshold remain customers of firm $B$ and are subject to personalised pricing (captured by the inclusion of their
+specific location in the price formation process) \textcolor{red}{wenn man sich den Beweis zu Lemma 1 anschaut ist der nicht immer > 0 oder?}
+\textcolor{green}{Wie genau sieht eigentlich $\tilde{y}$ aus? Das muss auch noch als Schwellwert rein}
+\\
+\citet[p. 5674]{Choe.2018} argue that the firm, e.g. firm $B$, which was able to secure a larger share of the market in the first period also has more to gain from
+a shift of the marginal consumer's position away from the center of the linear city, relative to what the competitor, e.g. firm $A$, loses if
+such a shift were to occur. \textcolor{red}{Is there a convergence to the extremes? The authors do not mention such a dynamic in their discussion on p. 5674 $\to$ vllt mal die Ableitungen untersuchen? In der Ableitung des Gesamtgewinns taucht aber kein z auf (p.5683)} 
+In the case of such a shift ($z' < z < 0.5$), the market share of $B$ in $\tau = 1$ increases relative to the majority it already controls.
+Such a shift requires a reduction in $P^1_B$ as $B$ must offset the higher transportation costs for those located in $[z',\,z)$. This more aggressive
+pricing affects all consumers previously already in~$\mathscr{B}$. As consumers maximise discounted intertemporal utility, firm $B$ is able to
+charge higher personlised prices and thus has a strong incentive to aggressively price its product in $\tau = 1$. 
+Conversely, firm $A$ can increase its poaching price in the second period relative to the situation prior to $z\to z'$, lowering the incentive 
+to undercut the aggressive pricing of firm $B$, and supporting the asymmetric equlibria of the game (p. 5674). \\
+Hence, the firm with the larger market share is incentivised to price more aggressively in the first period with the goal of securing a larger
+market share and gain an information advantage over its competitor. While they will lose customers to poaching in the second period,
+the ability to engage in personalised pricing allows firms to offset these losses in market share in terms of profits (p. 5680).
+There is only one-way switching in equilibrium (p. 5674).
+%
+Furthermore, it can now be easily verified that the existence of \textit{asymmetric} equilibria does indeed
+require that firms are forward-looking. Setting $\delta_f = 0$ in \eqref{hier label einfügen, Bezug auf Ergebnis von Lemma 1 } \textcolor{red}{FEHLT NOCH} implies $z = 0.5\, \forall\, \delta_c$. Setting $\delta_c = 0$ does not influence the
+existence of asymmetric equilibria. A symmetric outcome of the location game in turn indicates that the information obtained by firms is qualitatively
+identical. While firms track different consumers in $\mathscr{A}_{\delta_f = 0} = \{x | 0 \leq x \leq 0.5\}$ and $\mathscr{B}_{\delta_f = 0} = \{y | 0.5 \leq y \leq 1\}$, still under the
+assumption that firms $A,B$ is located at $0$ and $1$ respectively, both obtain the same information in the sense that both serve half the consumer 
+population and their respective customer bases are symmetric relazstive to the marginal consumer at $z = 0.5$ and for every consumer that frequents one
+of the firms in $\tau = 1$, there exists a customer of the other firm that incurs identical transportation costs.
+For given values of $\delta_c, \delta_f$ the prices set by firms in period $\tau = 1$ are simply linear functions of $t$,
+the (constant) scaling factor used to compute transportation costs.
 \subsection{Related Literature (tbd)}
 \begin{itemize}
 	\item p. 5672: ``we abstract away from these issues mainly because our aim is to clearly understand how changes in informational assumptions lead to different equilibria
@@ -219,7 +284,7 @@ from the assupmtion of a single discount factor $\delta_c$.}
 \section{\textcolor{red}{Zwischenfazit: What we have learned so far, where we stand now and where we are going next}}
 Preliminary conclusion: Model Components oder so ähnlich
 %
-\section{Extensions} \label{sec:extensions}
+\section{Extensions} \label{sec:choe-extensions}
 %
 \subsection{Intersecting \citet{Choe.2018} and \citet{Armstrong.2019}}
 %
